@@ -1,0 +1,74 @@
+/* Selector de tipo */
+
+body {
+    margin: 0;
+    text-align: center;
+    background-color: #ffe8e3;
+}
+
+h1 {
+    background-color: #df92c1;
+    margin: 0;
+    text-align: center;
+    color: #000000;
+}
+
+p {
+    font-size: 22px;
+}
+
+img {
+    height: auto;
+}
+
+/* Selector de clase */
+.resaltado{
+    color: #8a2dbd;
+}
+
+.imagen-principal{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.boton{
+    margin-right: 20px;
+    margin-top: 0px;
+    text-decoration: none;
+    background-color: #f5c9d2;
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px #df92c1;
+    display: inline-block;
+}
+
+#iconos{
+    text-align: center;
+    background-color: #df92c1;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #DF92C1;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 5px 10px #df92c1; /* no me disgusta, pero tampoco me encanta */
+
+}
+
+.navbar .nav-link {
+    background-color: #f5c9d2;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0 10px;
+    box-shadow: 0px 5px 10px #df92c1;
+    display: inline;
+    line-height: normal;
+}

@@ -1,0 +1,146 @@
+/* -------------------- ESTILOS GENERALES -------------------- */
+body {
+    margin: 0;
+    background-color: #ffe8e3;
+    font-family: system-ui, sans-serif;
+    text-align: center;
+}
+
+/* -------------------- BARRA DE NAVEGACIÓN -------------------- */
+nav {
+    background-color: #DF92C1;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    background-color: #f5c9d2;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0 10px;
+    box-shadow: 0px 5px 10px #df92c1;
+    display: inline-block;
+}
+
+/* -------------------- ENCABEZADOS -------------------- */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p, h2 {
+    margin: 0;
+}
+
+/* -------------------- SECCIONES -------------------- */
+section {
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Sección específica "Sobre mi" */
+.sobre-mi {
+    background-color: #eeeeee;
+    margin-left: 300px;
+    width: 80%;
+}
+
+.sobre-mi img {
+    width: 150px;
+    margin-left: 5px;
+}
+
+/* Segunda sección de "Sobre mi" con flex row-reverse */
+.sobre-mi-flex {
+    background-color: #FED4E0;
+    width: 60%;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* -------------------- IMÁGENES -------------------- */
+.gato {
+    width: 150px;
+    margin-left: 5px;
+}
+
+.artista {
+    width: 200px;
+    margin-left: 5px;
+}
+
+
+/* -------------------- TIERLIST -------------------- */
+.tier-section {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.tier-label {
+    width: 60px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+    color: #000;
+}
+
+.tier-label.s { background: #ff6b6b; }
+.tier-label.a { background: #ffd166; }
+.tier-label.b { background: #06d6a0; }
+.tier-label.c { background: #118ab2; color: #fff; }
+
+.tier-content {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 10px 12px;
+    flex: 1;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.tier-content img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 6px;
+}
+
+/* -------------------- LISTA (Adaptaciones) -------------------- */
+ul li {
+    margin-bottom: 20px;
+}
+
+ul li section {
+    margin-top: 10px;
+}
+
+ul li img {
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    height: 200px;
+}
+
+/* -------------------- BOTONES CENTRADOS INFERIORES -------------------- */
+#botones-footer a {
+    background-color: #f5c9d2;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    box-shadow: 0px 5px 10px #df92c1;
+}

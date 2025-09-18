@@ -1,0 +1,76 @@
+/* -------------------- ESTILOS GENERALES -------------------- */
+body {
+    margin: 0;
+    text-align: center;
+    background-color: #ffe8e3;
+    font-family: system-ui, sans-serif;
+}
+
+/* -------------------- BARRA DE NAVEGACIÓN -------------------- */
+nav {
+    background-color: #DF92C1;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    background-color: #f5c9d2;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0 10px;
+    box-shadow: 0px 5px 10px #df92c1;
+    display: inline;
+    line-height: normal;
+}
+
+/* -------------------- ENCABEZADOS -------------------- */
+p.titulo {
+    font-size: 26px;
+    text-decoration: underline;
+}
+
+/* -------------------- SECCIONES -------------------- */
+.sobre-mi {
+    background-color: #eeeeee;
+    margin: 0 auto; /* centramos horizontalmente */
+    width: 75%; /* reducimos margen izquierdo excesivo */
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sobre-mi img {
+    width: 150px;
+    margin: 10px 5px 0 5px; /* separacion arriba y horizontal */
+}
+
+/* Sección con flex para recitales */
+.sobre-mi-flex {
+    background-color: #FED4E0;
+    width: 60%;
+    margin: 25px auto 20px auto; /* centrado horizontal */
+    display: flex;
+    align-items: center;
+    flex-direction: row; /* texto izquierda, imágenes derecha */
+    padding: 10px;
+    font-size: 20px;
+    gap: 10px; /* espacio entre texto e imágenes */
+}
+
+.sobre-mi-flex p {
+    text-align: left; /* texto a la izquierda */
+    flex: 1; /* ocupa espacio restante */
+}
+
+.sobre-mi-flex img {
+    width: 200px;
+    margin-left: 5px;
+}
+
+/* -------------------- ID ÚNICO -------------------- */
+#seccion-gatos p {
+    margin-bottom: 15px; /* separacion con las imágenes */
+}
