@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pregunta 3</title>
+</head>
+<body style="background-color: #020204;">
+  <center>
+    <img src="../imagen/blood.gif" alt="" style="width: 50%;"><img src="../imagen/blood.gif" alt="" style="width: 50%;">
+    <h1 style="font-size: 50px; color: #ACACAC;margin-bottom: 10px; margin-top: 10px;">Pregunta 3</h1>
+    <h2 id="pregunta" style="font-size: 40px; color: #ACACAC;margin-top: 30px"></h2>
+
+    <section style="margin-top: 100px;">
+      <a id="op1" href="" style="background-color: #080808; text-decoration: none; border-radius: 5px; padding: 10px;font-size: 40px; margin-right: 10px; color: #9C9C9C;">Opción 1</a>
+      <a id="op2" href="" style="background-color: #080808; text-decoration: none; border-radius: 5px; padding: 10px;font-size: 40px; margin-left: 10px; color: #9C9C9C;">Opción 2</a>
+    </section>
+  </center>
+
+  <script>
+    
+    const preguntas = [
+      {
+        texto: "¿Qué director filmó 'Suspiria' en 1977?",
+        correcta: ["Dario Argento", "ganaste.html"],
+        incorrecta: ["Mario Bava", "incorrecta.html"]
+      },
+      {
+        texto: "¿Cuál es el nombre de la entidad que aterroriza en la película 'It Follows' (2014)?",
+        correcta: ["No tiene nombre", "ganaste.html"],
+        incorrecta: ["Lilith", "incorrecta.html"]
+      },
+      {
+        texto: "¿Qué película de terror ganó la Palma de Oro en Cannes 2021?",
+        correcta: ["Titane", "ganaste.html"],
+        incorrecta: ["Hereditary", "incorrecta.html"]
+      },
+      {
+        texto: "En 'El proyecto de la bruja de Blair', ¿cómo se llama la bruja de la leyenda?",
+        correcta: ["Elly Kedward", "ganaste.html"],
+        incorrecta: ["Mary Shaw", "incorrecta.html"]
+      },
+      {
+        texto: "¿Quién compuso la perturbadora banda sonora de 'El exorcista'?",
+        correcta: ["Mike Oldfield", "ganaste.html"],
+        incorrecta: ["Ennio Morricone", "incorrecta.html"]
+      },
+      {
+        texto: "En 'La masacre de Texas', ¿qué herramienta usa principalmente Leatherface?",
+        correcta: ["Motosierra", "ganaste.html"],
+        incorrecta: ["Hacha", "incorrecta.html"]
+      },
+      {
+        texto: "¿Cuál es el verdadero nombre de 'Candyman'?",
+        correcta: ["Daniel Robitaille", "ganaste.html"],
+        incorrecta: ["Victor Pascow", "incorrecta.html"]
+      },
+      {
+        texto: "En 'El faro' (2019), ¿qué criatura marina obsesiona a uno de los protagonistas?",
+        correcta: ["Una sirena", "ganaste.html"],
+        incorrecta: ["Un kraken", "incorrecta.html"]
+      },
+      {
+        texto: "En 'Hereditary', ¿qué palabra clave invocan los personajes durante la sesión espírita?",
+        correcta: ["Paimon", "ganaste.html"],
+        incorrecta: ["Azazel", "incorrecta.html"]
+      },
+      {
+        texto: "¿Qué director japonés hizo 'Ringu' (La llamada) en 1998?",
+        correcta: ["Hideo Nakata", "ganaste.html"],
+        incorrecta: ["Takashi Miike", "incorrecta.html"]
+      }
+    ];
+
+    
+    const p = preguntas[Math.floor(Math.random() * preguntas.length)];
+
+    
+    document.getElementById("pregunta").innerText = p.texto;
+
+    
+    const correctaIzquierda = Math.random() < 0.5;
+
+    if (correctaIzquierda) {
+      document.getElementById("op1").innerText = p.correcta[0];
+      document.getElementById("op1").href = p.correcta[1];
+      document.getElementById("op2").innerText = p.incorrecta[0];
+      document.getElementById("op2").href = p.incorrecta[1];
+    } else {
+      document.getElementById("op1").innerText = p.incorrecta[0];
+      document.getElementById("op1").href = p.incorrecta[1];
+      document.getElementById("op2").innerText = p.correcta[0];
+      document.getElementById("op2").href = p.correcta[1];
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pregunta 2</title>
+</head>
+<body style="background-color: #020204;">
+  <center>
+    <img src="../imagen/blood.gif" alt="" style="width: 50%;"><img src="../imagen/blood.gif" alt="" style="width: 50%;">
+    <h1 style="font-size: 50px; color: #ACACAC;margin-bottom: 10px;margin-top: 10px;">Pregunta 2</h1>
+    <h2 id="pregunta" style="font-size: 40px; color: #ACACAC; margin-top: 10px;"></h2>
+
+    
+     <section>
+      <img id="imagen" src="" alt="Escena" width="400px" style="margin-bottom: 50px;">
+    </section>
+
+    
+    <a id="op1" href="" style="background-color: #080808; text-decoration: none; border-radius: 5px; padding: 10px;font-size: 40px; margin-right: 10px;color: #9C9C9C;">Opción 1</a>
+    <a id="op2" href="" style="background-color: #080808; text-decoration: none; border-radius: 5px; padding: 10px;font-size: 40px; margin-left: 10px;color: #9C9C9C;">Opción 2</a>
+  </center>
+
+  <script>
+    
+    const preguntas = [
+      {
+        texto: "¿De que pelicula es la siguiente escena?",
+        imagen: "../imagen/jhonny.gif",
+        correcta: ["El resplandor", "nivel3.html"],
+        incorrecta: ["La bruja de Blair", "incorrecta.html"]
+      },
+      {
+        texto: "¿De que pelicula es la siguiente escena?",
+        imagen: "../imagen/sixsense.gif",
+        correcta: ["Sexto sentido", "nivel3.html"],
+        incorrecta: ["Ouija", "incorrecta.html"]
+      },
+      {
+        texto: "¿De que pelicula es la siguiente escena?",
+        imagen: "../imagen/psicosis.gif",
+        correcta: ["Psicosis", "nivel3.html"],
+        incorrecta: ["Psicopata americana", "incorrecta.html"]
+      },
+      {
+        texto: "¿De que pelicula es la siguiente escena?",
+        imagen: "../imagen/elconjuro.gif",
+        correcta: ["El conjuro", "nivel3.html"],
+        incorrecta: ["Midsommar", "incorrecta.html"]
+      },
+      {
+        texto: "¿De que pelicula es la siguiente escena?",
+        imagen: "../imagen/elorfanato.gif",
+        correcta: ["El orfanato", "nivel3.html"],
+        incorrecta: ["Los otros", "incorrecta.html"]
+      },
+      {
+        texto: "¿De que pelicula es la siguiente escena?",
+        imagen: "../imagen/blackphone.gif",
+        correcta: ["Telefono negro", "nivel3.html"],
+        incorrecta: ["Insidious", "incorrecta.html"]
+      },
+      {
+        texto: "¿De que pelicula es la siguiente escena?",
+        imagen: "https://64.media.tumblr.com/d76656bfbb356538f84658b5a75d4c8c/f8dd1a69a04e01b8-9e/s400x600/8185d0f361fb2974afd9bbd9bd91d4dc09f9b262.gifv",
+        correcta: ["Actividad paranormal", "nivel3.html"],
+        incorrecta: ["Siniestro", "incorrecta.html"]
+      },
+      {
+        texto: "¿De que pelicula es la siguiente escena?",
+        imagen: "../imagen/carrie.gif",
+        correcta: ["Carrie", "nivel3.html"],
+        incorrecta: ["Evil dead", "incorrecta.html"]
+      },
+      {
+        texto: "¿De que pelicula es la siguiente escena?",
+        imagen: "../imagen/destinofinal.gif",
+        correcta: ["Destino final", "nivel3.html"],
+        incorrecta: ["La masacre de Texas", "incorrecta.html"]
+      },
+      {
+        texto: "¿De que pelicula es la siguiente escena?",
+        imagen: "../imagen/jennifersbody.gif",
+        correcta: ["Diabolica tentacion", "nivel3.html"],
+        incorrecta: ["Hereditary", "incorrecta.html"]
+      }
+    ];
+
+    
+    const p = preguntas[Math.floor(Math.random() * preguntas.length)];
+
+    
+    document.getElementById("pregunta").innerText = p.texto;
+    document.getElementById("imagen").src = p.imagen;
+
+    
+    const correctaIzquierda = Math.random() < 0.5;
+
+    if (correctaIzquierda) {
+      document.getElementById("op1").innerText = p.correcta[0];
+      document.getElementById("op1").href = p.correcta[1];
+      document.getElementById("op2").innerText = p.incorrecta[0];
+      document.getElementById("op2").href = p.incorrecta[1];
+    } else {
+      document.getElementById("op1").innerText = p.incorrecta[0];
+      document.getElementById("op1").href = p.incorrecta[1];
+      document.getElementById("op2").innerText = p.correcta[0];
+      document.getElementById("op2").href = p.correcta[1];
+    }
+  </script>
+</body>
+</html>
